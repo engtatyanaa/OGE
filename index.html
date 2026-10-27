@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ОГЭ · Russia: тренажёр</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#f3f6f4;--sf:#fff;--tx:#18241f;--mu:#5d6b64;--ac:#1d5c4a;--ln:#d5ddd8;--ok:#1f7a3d;--okb:#e3f4e8;--no:#b3261e;--nob:#fbe7e5;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121917;--sf:#1b2420;--tx:#e8efeb;--mu:#9aaaa2;--ac:#6fc2a5;--ln:#2d3a35;--ok:#7bd69a;--okb:#16301f;--no:#ff8f86;--nob:#3a1b19;color-scheme:dark}}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 Georgia,"Times New Roman",serif}
+main{max-width:860px;margin:0 auto;padding:16px}
+h1{font-size:1.5rem;margin:.2em 0}.sub{color:var(--mu);margin:0 0 12px;font-family:system-ui,sans-serif;font-size:.9rem}
+nav{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0;font-family:system-ui,sans-serif}
+nav button,.btn{font:600 .9rem system-ui,sans-serif;border:1px solid var(--ln);background:var(--sf);color:var(--tx);padding:8px 14px;border-radius:8px;cursor:pointer}
+nav button.on,.btn.p{background:var(--ac);color:var(--bg);border-color:var(--ac)}
+:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+.card{background:var(--sf);border:1px solid var(--ln);border-radius:10px;padding:12px 14px;margin:10px 0}
+.card b{font-family:system-ui,sans-serif}
+.q{display:flex;gap:10px;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--ln)}
+select,input,textarea{font:inherit;color:var(--tx);background:var(--bg);border:1px solid var(--ln);border-radius:6px;padding:4px 8px}
+input{width:130px}textarea{width:100%;min-height:200px}
+.ok{background:var(--okb)!important;border-color:var(--ok)!important}.no{background:var(--nob)!important;border-color:var(--no)!important}
+.fb{font:.85rem system-ui,sans-serif;color:var(--mu);margin-top:2px}
+.res{font:700 1.05rem system-ui,sans-serif;margin:10px 0}
+.hint{color:var(--mu);font:.75rem system-ui,sans-serif}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+</style></head><body><main>
+<h1>ОГЭ · Английский · Russia</h1>
+<p class="sub">Тренажёр с автопроверкой по заданиям Открытого банка ФИПИ</p>
+<nav id="nav"></nav><div id="app"></div></main>
+<script>
+const T12=[
+{n:"Vladivostok",id:"303746",k:"C-DAFBE",
+q:["Why was Vladivostok called so?","Who founded the city of Vladivostok?","Why has the city quickly become important?","What is the climate of the city area?","How is it possible to travel to the city?","What are the city sights one should visit?","What makes Vladivostok buildings unique?"],
+t:["Vladivostok is located at the same latitude as Russian subtropical sea resort Sochi, but its average annual temperature is nearly 10 degrees lower because of the Siberian Anticyclone. It brings cold winds from Yakutia for much of the winter season. Thus, the winter in Vladivostok is typical of Manchuria – it is cold, clear, and very windy. The snow is rare and, in some years, may not fall at all. The summer is more comfortable, warm, wet, and partly cloudy.",
+"The first thing that will catch the eye of every tourist right from the platform of the railway station is a unique building of the terminal of the Trans-Siberian Railway. It was built more than a century ago. The sea terminal, located nearby, is also a must-see while going on a tour of Vladivostok. Like other port cities, Vladivostok celebrates the Russian fleet with a number of museums. No doubt, the legendary S-56 submarine which played a great role in the Great Patriotic War is worth visiting.",
+"The most important city in the Russian Far East, Vladivostok is known as the town of sailors. It was founded about 160 years ago as a small military port. Despite being one of the youngest Russian cities, Vladivostok managed to find its way to the list of the best Russian cities to visit. Its name came from the combination of two words, vladet (meaning “to own”) and vostok (meaning “east”), helping anyone who wants to find Vladivostok on a map.",
+"The Trans-Siberian Railway was built to connect Asian and European Russia. The final stop on the way, or the first if passengers are travelling west, is in Vladivostok. The city’s strategic location and port led to the fact that Vladivostok has eventually become a large and busy centre in North-East Asia. After its foundation in 1860 as a military post, Vladivostok soon became the centre of international commerce and development.",
+"Despite the fact that Vladivostok has always been a Russian city, elements of the Chinese and Japanese architecture borrowed from the city’s nearest neighbours can be seen even during a simple walk down the city streets. At the same time, the architecture of Vladivostok leaves no doubt that this is a Russian city. So, this unique place combines a lot of different features.",
+"As a rule, people prefer to spend a couple of days exploring Vladivostok within their long tour to the Far East, instead of considering the city as an independent holiday destination. They may fly to Vladivostok or go by rail choosing the famous Trans-Siberian express which is very popular with tourists. The Trans-Siberian Railway is the longest railway route in the world. So, going by train to Vladivostok can easily become a journey of a lifetime."]},
+{n:"Veliky Novgorod",id:"D61DF5",k:"BC-ADFE",
+q:["What made Veliky Novgorod one of the main cities of the past?","What is known about the ancient history of Veliky Novgorod?","Who founded the old city of Veliky Novgorod?","What makes Veliky Novgorod a popular tourist destination?","What are the most interesting sights to visit in Veliky Novgorod?","How is it possible to get to Veliky Novgorod?","What souvenirs can be brought from the city?"],
+t:["Veliky Novgorod is a nice city, perfectly located not far from Saint Petersburg and Moscow. Being one of the oldest cities in Russia, it attracts hundreds of visitors. Veliky Novgorod is often called an open-air museum of the ancient Rus. Many outstanding monuments of medieval architecture situated not only in the city centre but also in some outlying areas have been preserved. In 1992 Veliky Novgorod was given the status of the World Heritage Site of UNESCO.",
+"Veliky Novgorod was founded in the 9-10 centuries. Being the best-fortified city of the ancient Rus, it has seen a lot of great events during its 11-century history. Novgorod was a political centre of large territories stretching up from Baltic lands to the Urals. For a long time, Novgorod was the largest centre of culture in Russia, where old chronicles and books were created. Moreover, the city stood on the famous trade route from the Varangians to the Greeks.",
+"Veliky Novgorod was first mentioned in the year 862 in the famous historic document “The Tale of Bygone Years”. The Russian primary chronicle gives a detailed account of the early history of the eastern Slavs. It tells the story of Rurik, the Viking chieftain, who was invited to the city as a new leader. It was an important event in the history of the country as Rurik became the founder of the whole dynasty of the ancient Rus, staying in power up to the 17th century.",
+"Many great monuments of medieval architecture and painting have been well kept in the city. The Novgorod Kremlin dates back to the 11th century. The Kremlin territory houses one of the most beautiful Orthodox churches, St. Sophia Cathedral, as well as the regional library and the Philharmonic building. The open-air Vitoslavlitsy museum of wooden architecture presents some excellent examples of wooden structures from different parts of the city.",
+"Novgorod craftsmen have always been famous for their birchbark crafts. Tourists can find various cute items to bring back home. They are jewellery boxes, hairpins and hairbands, plates and cups. For fun, one can also buy bast shoes – traditional footwear of Russian peasants also made of birchbark. Along with birchbark items, one will always find wooden carved figures in shops. They will become a perfect gift or a home decoration for oneself.",
+"The most convenient way of travelling to Veliky Novgorod is to go by train. The fastest route is now offered by the Lastochka train departing from Saint Petersburg twice a day. Travel time is less than 3 hours, which is much faster than travelling by train from Moscow, which will take the whole night. Bus trips are available as well. Getting to Veliky Novgorod by car is also quite a fast and convenient way for those who choose privacy and comfort."]}];
+
+const HC={id:"684ECB",
+txt:["Hermitage cats have been officially kept in the Winter Palace in St. Petersburg, Russia, since its foundation. The cats prevented intensive breeding of rats and mice in the State Hermitage Museum. The director of the Hermitage, Mikhail Piotrovsky, said, “Cats have become a very important part of our Hermitage lives and a significant part of Hermitage Legends.”",
+"It is believed that the history of the Hermitage cats started with a cat that was brought from Holland by Peter the Great. In the XVIII century there were lots of rats in the Old Winter Palace. The history of cats continued due to Empress Elizaveta Petrovna. Visiting Kazan, she noticed that there were no rats and mice in the city because of the large number of cats. The Empress ordered to bring some Kazan cats to St Petersburg, to the old Winter Palace. The cats had done their job, and almost all the rats disappeared from the palace. After the construction of the Winter Palace, the cats settled down in the new building too. The founder of the Hermitage, Empress Catherine II, gave the cats the status of ‘gallery guards’.",
+"Cats in the Hermitage existed for a long time, during the war with Napoleon, and after the revolution, under the Soviet regime. In 1941, when the Great Patriotic War began, the works of art were evacuated to the Urals, to Sverdlovsk. After the war, two cars brought new cats to the Hermitage. The rats, that had invaded the building during the war, stepped back. However, in the 1960s it was decided that the cats were not needed any more. Employees of the museum caught the cats and took them away. But, soon after, rats invaded the building. Since then, the museum has never got rid of its cats.",
+"Today, about seventy cats live in the Hermitage to protect it from mice and rats. Each cat has its own passport and a veterinary card. They live comfortably in the basement. The place where they live is always warm and dry, and all the rooms of the basement are equipped with small holes, to let the cats move freely inside and outside the building.",
+"The Hermitage employees regularly buy food for the cats. They try to make their meals healthy and diverse. Each cat has its own bowl, tray and basket to sleep. In summer, the cats are more often outside on the lawns and courtyards than in their basement.",
+"To control the number of cats in the Hermitage, employees sometimes give away their cats to residents of the city. The new owner has to present their passport and leave their contact details. The adopted animals are accompanied by a certificate from the Hermitage."],
+s:[["According to its director, the Hermitage is the only museum in Russia where cats are kept officially.",3,"Директор говорит лишь о роли кошек."],
+["During the reign of Empress Catherine II the cats received the official status.",1,"Catherine II gave the cats the status of ‘gallery guards’."],
+["During the Great Patriotic War the Hermitage cats were taken to Sverdlovsk to guard the works of art.",2,"В Свердловск эвакуировали произведения искусства, а не кошек."],
+["Nowadays all the cats are settled in the attic of the Hermitage.",2,"Кошки живут в подвале (basement)."],
+["The Hermitage cats are taken good care of.",1,"Еда, миска, лоток, корзина, тёплое сухое помещение."],
+["The cats are not allowed to leave the building of the museum.",2,"Small holes let the cats move freely inside and outside."],
+["The new owner of a Hermitage cat can visit the museum free of charge.",3,"Бесплатное посещение музея не упоминается."]]};
+
+const G=[{n:"The Bolshoi Theatre",id:"95C331",f:20,
+x:"It was a great day yesterday. My friends and I [20](GO) to see a performance at the Bolshoi Theatre. You certainly know that the Bolshoi Theatre is the [21](FAMOUS) theatre in Russia and probably in the world. But not everyone [22](KNOW) the history of the Bolshoi Theatre. According to historical documents, it [23](BEGIN) in March 1776 when Prince Pyotr Urusov was granted Royal permission to build a public theatre in Moscow. Catherine II, Empress of Russia, was fond of arts. She [24](NOT MIND) having a new theatre in her country. The original building of the theatre had a hall with almost 1,000 seats, a stage and an orchestra pit. Directly over the stage there [25](BE) boxes where the most noble fans of the theatre had their seats. The theatre has changed several times during [26](IT) history. The building we can see today opened in 1825. It [27](DESIGN) by architect Andrei Mikhailov who was also the architect of the Maly Theatre. Since that time, the building has been rebuilt and renovated several times. Now it looks beautiful from the inside and outside. If I [28](HAVE) the opportunity to go there more often, I would do it every week.",
+a:{20:"went",21:"most famous",22:"knows",23:"began",24:"did not mind|didn't mind",25:"were",26:"its",27:"was designed",28:"had"}},
+{n:"Russian wolves",id:"2CC797",
+x:"Russia is a large country with great diversity in flora and fauna. There are several large [29](NATION) parks in Russia. A lot of different animals live there. Wolves are probably the best known, and are very well studied animals, so we have enough [30](INFORM) about their diet and behaviour. The wolf is a good [31](HUNT). They usually hunt wild animals like deer and hares, but sometimes they can attack sheep, goats, and cows. The wolf tries to avoid people and only goes into villages when he is [32](REAL) hungry. In some [33](RUSSIA) tales, the wolf is often represented as a clever animal that helps the main character, Ivan. The wolf is usually direct and [34](CREATE) and helps Ivan to cope with many difficult problems.",
+a:{29:"national",30:"information",31:"hunter",32:"really",33:"Russian",34:"creative"}}];
+
+const E=[{n:"Holidays",id:"ACFA37",who:"Ben",
+p:"… I’ve just returned from China. They were celebrating the Chinese New Year there. Lots of people were dressed like dragons.\n… What are the most popular holidays in Russia? What is your favourite holiday and why? How do you celebrate it? …"},
+{n:"Visiting Russia",id:"679834",who:"Steve",
+p:"… Last year I started learning Russian. It’s a very difficult language but I’m trying to do my best. I’d like to come to Russia one day to practise it.\n… Which season would you recommend for the trip? What places are worth seeing in Russia? What country would you like to visit and why? …"}];
+
+const $=s=>document.querySelector(s),app=$("#app");
+const norm=s=>s.toLowerCase().replace(/[’‘]/g,"'").replace(/\s+/g," ").trim();
+const L="ABCDEF";
+const tabs=[["12","Задание 12"],["13","13–19"],["20","20–34"],["35","35 · письмо"]];
+let cur="12";
+$("#nav").innerHTML=tabs.map(t=>`<button data-t="${t[0]}">${t[1]}</button>`).join("");
+$("#nav").onclick=e=>{if(e.target.dataset.t)go(e.target.dataset.t)};
+function go(t){cur=t;document.querySelectorAll("nav button").forEach(b=>b.classList.toggle("on",b.dataset.t==t));({12:v12,13:v13,20:v20,35:v35})[t]()}
+function res(n,m){const r=$("#res");r.textContent=`Результат: ${n} из ${m}`}
+function topicSel(list,fn){return `<div class="row"><label>Тема: <select id="tp">${list.map((x,i)=>`<option value="${i}">${x.n} (№ ${x.id})</option>`).join("")}</select></label></div>`}
+
+function v12(i=0){const d=T12[i];
+app.innerHTML=topicSel(T12)+`<p class="sub">Определите, в каком тексте A–F есть ответ на вопрос. Один вопрос остаётся без ответа.</p>`+
+d.t.map((t,j)=>`<div class="card"><b>${L[j]}</b> ${t}</div>`).join("")+
+`<div class="card">`+d.q.map((q,j)=>`<div class="q" id="q${j}"><span>${j+1}. ${q}</span><select><option value="">?</option>${[...L].map(c=>`<option>${c}</option>`).join("")}<option value="-">нет ответа</option></select></div>`).join("")+
+`</div><div class="row"><button class="btn p" id="ck">Проверить</button><button class="btn" id="rs">Сначала</button></div><div class="res" id="res"></div>`;
+$("#tp").value=i;$("#tp").onchange=e=>v12(+e.target.value);$("#rs").onclick=()=>v12(i);
+$("#ck").onclick=()=>{let n=0;d.q.forEach((_,j)=>{const r=$("#q"+j),s=r.querySelector("select"),ok=s.value==d.k[j];n+=ok;r.className="q "+(ok?"ok":"no");
+let f=r.querySelector(".fb");if(!f){f=document.createElement("div");f.className="fb";r.append(f)}f.textContent=ok?"":"Верно: "+(d.k[j]=="-"?"нет ответа":d.k[j])});res(n,7)}}
+
+function v13(){const h=HC;
+app.innerHTML=`<p class="sub">Hermitage cats · № ${h.id}. 1 – True, 2 – False, 3 – Not stated.</p>`+h.txt.map(t=>`<div class="card">${t}</div>`).join("")+
+`<div class="card">`+h.s.map((s,j)=>`<div class="q" id="s${j}"><span>${13+j}. ${s[0]}</span><select><option value="">?</option><option value="1">1 True</option><option value="2">2 False</option><option value="3">3 Not stated</option></select></div>`).join("")+
+`</div><div class="row"><button class="btn p" id="ck">Проверить</button></div><div class="res" id="res"></div>`;
+$("#ck").onclick=()=>{let n=0;h.s.forEach((s,j)=>{const r=$("#s"+j),ok=r.querySelector("select").value==s[1];n+=ok;r.className="q "+(ok?"ok":"no");
+let f=r.querySelector(".fb");if(!f){f=document.createElement("div");f.className="fb";r.append(f)}f.textContent=(ok?"":"Верно: "+s[1]+". ")+s[2]});res(n,7)}}
+
+function v20(i=0){const d=G[i];
+const html=d.x.replace(/\[(\d+)\]\((.*?)\)/g,(m,n,h)=>`<input data-n="${n}" aria-label="${n}" autocomplete="off" spellcheck="false"> <span class="hint">${n}: ${h}</span>`);
+app.innerHTML=topicSel(G)+`<p class="sub">Поставьте слово в нужную форму.</p><div class="card" style="line-height:2.1">${html}</div><div class="row"><button class="btn p" id="ck">Проверить</button></div><div class="res" id="res"></div>`;
+$("#tp").value=i;$("#tp").onchange=e=>v20(+e.target.value);
+$("#ck").onclick=()=>{let n=0,m=0;document.querySelectorAll("input[data-n]").forEach(inp=>{m++;const ans=d.a[inp.dataset.n].split("|"),ok=ans.some(a=>norm(a)==norm(inp.value))&&(inp.value.trim()[0]==ans[0][0]||ans[0][0]==ans[0][0].toLowerCase());
+n+=ok;inp.className=ok?"ok":"no";inp.title=ok?"":"Верно: "+ans[0]});res(n,m);document.querySelectorAll("input.no").forEach(x=>x.insertAdjacentHTML("afterend",`<span class="hint"> → ${x.title}</span>`))}}
+
+function v35(i=0){const d=E[i];
+app.innerHTML=topicSel(E)+`<div class="card"><b>From:</b> ${d.who}@mail.uk<br>${d.p.replace(/\n/g,"<br>")}</div><p class="sub">Write an email to ${d.who} and answer his 3 questions. 100–120 words.</p>
+<textarea id="em" placeholder="Dear ${d.who},"></textarea><div class="row"><span class="res" id="wc">0 слов</span><button class="btn p" id="ck">Проверить структуру</button></div><div id="ls"></div>`;
+$("#tp").value=i;$("#tp").onchange=e=>v35(+e.target.value);
+const wc=()=>{const w=$("#em").value.trim().split(/\s+/).filter(Boolean).length;$("#wc").textContent=w+" слов (нужно 100–120, допустимо ±10 %)";return w};
+$("#em").oninput=wc;
+$("#ck").onclick=()=>{const t=$("#em").value,w=wc(),lines=t.trim().split(/\n/).filter(x=>x.trim()),last=lines[lines.length-1]||"",paras=t.split(/\n\s*\n/).filter(x=>x.trim()).length;
+const c=[["Приветствие (Dear / Hi …)",/^\s*(dear|hi|hello)\b/i.test(t)],["Благодарность или отсылка к письму (Thanks, Thank you, It was great to hear …)",/thank|thanks|hear from|got your|received/i.test(t)],
+["Объём 90–132 слов",w>=90&&w<=132],["Абзацы (минимум 4)",paras>=4],["Вопрос другу в конце (хотя бы один «?»)",(t.match(/\?/g)||[]).length>=1],
+["Прощание (Best wishes, Write soon, Bye …)",/best wishes|write soon|all the best|bye|yours|regards|cheers/i.test(t)],["Подпись (имя на последней строке)",lines.length>2&&last.split(/\s+/).length<=2&&!/[.?!]$/.test(last.trim())]];
+$("#ls").innerHTML=`<div class="card">`+c.map(x=>`<div class="q ${x[1]?"ok":"no"}">${x[0]}<b>${x[1]?"✓":"✗"}</b></div>`).join("")+`<p class="hint">Проверяется только формат. Содержательные ответы на 3 вопроса оценивает учитель.</p></div>`}}
+go("12");
+</script></body></html>
